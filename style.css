@@ -33,9 +33,9 @@ body {
     text-align: center;
 }
 
-.text-container {
+/* .text-containe {
     z-index: 1;
-}
+} */
 
 a {
     text-decoration: none;
@@ -190,4 +190,51 @@ footer {
     padding: 30px;
     margin-top: 50px;
     font-size: 20px;
+}
+
+@media (max-width : 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .emprendimientos,
+    .participantes {
+        padding: 30px 0;
+    }
+
+    .emprendimientos h2,
+    .participantes h2 {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 125px;
+        height: 125px;
+    }
+
+    .card_capa p {
+        font-size: 16px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+
+    .card-participante {
+        width: 125px;
+        height: 125px;
+        margin: 0;
+    }
+
+    .card_nombre p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
 }
