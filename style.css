@@ -238,3 +238,270 @@ footer {
         font-size: 16px;
     }
 }
+
+
+/* estilos paginas emprendimiento */
+
+/* Reset CSS */
+
+
+/* Estilos Generales */
+.body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #ff6f61;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.header__contenido {
+    max-width: 800px;
+}
+
+.header__titulo {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.header__eslogan {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.header__boton {
+    padding: 15px 25px;
+    background-color: white;
+    color: #ff6f61;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: 2px solid #ff6f61;
+    transition: background-color 0.3s;
+}
+
+.header__boton:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Sección de Información */
+.informacion {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.informacion__titulo {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.informacion__descripcion {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+.informacion__detalles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.informacion__detalle {
+    width: 30%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.informacion__detalle-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.informacion__detalle-texto {
+    font-size: 1rem;
+}
+
+/* Sección de Participantes */
+.participantes {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.participantes__titulo {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.participantes__lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.participantes__tarjeta {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.participantes__imagen {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.participantes__nombre {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.participantes__rol {
+    font-size: 1rem;
+}
+
+/* Sección Carrito */
+.carrito {
+    background-color: #ff6f61;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.carrito__titulo {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.carrito__formulario {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carrito__label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.carrito__input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 50px;
+    text-align: center;
+    border: 2px solid #ff6f61;
+    border-radius: 5px;
+}
+
+.carrito__boton {
+    padding: 15px 25px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.carrito__boton:hover {
+    background-color: #ff4b40;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__texto {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+
+    .header__titulo {
+        font-size: 2rem;
+    }
+
+    .header__eslogan {
+        font-size: 1rem;
+    }
+
+    .header__boton {
+        font-size: 0.95rem;
+        padding: 10px 15px;
+    }
+
+    .informacion__titulo,
+    .participantes__titulo,
+    .carrito__titulo {
+        font-size: 1.8rem;
+    }
+
+    .informacion__descripcion,
+    .carrito__label {
+        font-size: 1rem;
+    }
+
+    /* Apilamiento completo en móviles */
+    .informacion__detalles {
+        flex-direction: column;
+        /* Apilar detalles verticalmente */
+        align-items: center;
+    }
+
+    .informacion__detalle {
+        width: 100%;
+        /* Ocupa todo el ancho */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* Apilamiento de participantes */
+    .participantes__lista {
+        flex-direction: column;
+        /* Apilar los participantes verticalmente */
+        align-items: center;
+    }
+
+    .participantes__tarjeta {
+        width: 90%;
+        /* Hace que las tarjetas de participantes ocupen un 90% */
+        margin-bottom: 20px;
+    }
+
+    .carrito__input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .carrito__boton {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .footer__texto {
+        font-size: 0.9rem;
+    }
+}
